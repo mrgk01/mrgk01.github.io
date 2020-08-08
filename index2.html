@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Mr.GK-Poetries</title>
 </head>
-<body>
+<body
+       <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Index1.html">Songs</a></li>   
+    </ul>
+    </nav>
     <h1>Poetries</h1>
     <a href="p/1.jpeg"><img src="p/1.jpeg" class="po"></a>&nbsp;
     <a href="p/2.jpeg"><img src="p/2.jpeg" class="po"></a>&nbsp;
@@ -70,5 +76,45 @@
     .po{
         height:50%;
         width:49%;
+    }
+     li a:hover{
+        color: red;
+        text-transform: uppercase;
+        transition: 0.6s;
+    }
+    nav{
+	  
+         width: 100%;
+          overflow: auto;
+          height: 67px;
+          position: relative;
+          bottom: 10%;
+          border: white solid;
+
+
+    }
+    ul{
+        list-style: none;
+        
+    }
+    li{
+       
+        float: left;
+        position: relative;
+        width: 35%;
+        margin-left: 8%;
+        margin-right:3%;
+        
+
+        
+    }
+    li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 40px;
+        
+    
+
+        
     }
 </style>
