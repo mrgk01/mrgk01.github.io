@@ -6,43 +6,48 @@
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <header>
-    <div class="logo">Artist - Mr.GK</div>
+    <div class="logo">Mr.GK</div>
     <nav class="active">
         <ul>
              <li><a href="index.html" class="active">Home</a></li>
             <li><a href="index2.html">Poetries</a></li>
             <li><a href="index1.html">Songs</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Review</a></li>
-
+            <li><a href="index3.html">About</a></li>
+            <li><a href="index4.html">Contact Us</a></li>
+            <!-- <li><div class="main"><form action="submit">
+                <input type="text" name="search" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form></div></li> -->
         </ul>
     </nav>
-   <!-- <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>  -->
 </header>
 
-
-    <!-- <img src="dp.jpg" id="dp"> -->
-
+      <h2>Mr.GK</h2>
     
-    <h2>Mr.GK</h2>
-
+    
     <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram" id="insta"></i></a>
     <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube" id="instaa"></i></a>
     <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook"id="instaaa"></i></a>
-    <a href="https://www.yourquote.in/mr-gk-bb0by/quotes"><i class="fa fa-google"id="instaaaa"></i></a>
+    <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google"id="instaaaa"></i></a>
 
-<p>ajehfkuasgdfsadgfkasfguyiafgvkgsavuyyasgd</p>
+<img src="dp1.jpg" id="dp">
+<img src="dp2.jpg" id="dp1">
+
+
+<h3 class="bio" ><strike style="color:white ;">Biography</strike></h3>
+<p id="para">Hlo , Welcome to my site. Myself Gaurav(Mr.GK) , I'am a rapper and also a poet. I started rapping
+    at the age of 17 in class 11th.There are 4 rap song of mine on youtube but because of some reason thy
+    are private now. My 1st song #khatam_krdo_pakistan was on pulwama attack (14 feb) and also I love to 
+    write poetries and i'am doing it from aproxx 1 year(2019).You can read my poetries on poetries page 
+    also you can read it on my instagram page , i provided link on contact page of this website.&#10084;&#65039;</p>
 
 </body>
 </html>
 <style>
-    p{
-        position: relative;
-        margin-top: 600%;
-    }
     body{
         margin: 0;
         padding: 0;
@@ -51,6 +56,7 @@
         background-repeat: no-repeat;
         font-family: sans-serif;
         background-color: rgb(15, 15, 15);
+        color: white;
 
     }
     
@@ -83,6 +89,7 @@
         padding: 0;
         display: flex;
         margin-right:-70px ;
+        background-color: black;
     }
     header nav ul li
     {
@@ -173,4 +180,68 @@
         transform: scale(1.3);
     }
 
+    .main{
+        /* max-width: 1%; */
+        margin: 0;
+        margin-top: 6%;
+    }
+    input[type=text]{
+        width: 69%;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid #000;
+        font-style: italic;
+
+    }
+    input[type=submit]{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 0 1px #000;
+        cursor: pointer;
+        text-align: center;
+
+    }
+    input[type=submit]:hover{
+        background: red;
+        transition: 0.3s;
+        transform: scale(1.1);
+        color: white;
+    }
+    input[type=text]:focus,input[type=submit]:focus{
+        outline: none;
+    }
+    #dp{
+        position: relative;
+        width: 35%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+        left: 15%;
+        z-index: 1;
+    }
+    #dp1{
+        position: absolute;
+        top:133%;
+        left: 7%;
+        width: 35%;
+        height: 40%;
+        
+        margin-bottom: 10%;
+        margin-left:5%;
+        opacity: 100%;
+        border: 3px solid red ;
+        
+    }
+    .bio{
+        position: absolute;
+        left: 63%;
+        bottom: -45%;
+        font-size: 280%;
+       
+    }
+    #para{
+        position: absolute;
+        left: 53%;
+        bottom: -83%;
+        font-size: 110%;
+        line-height: 200%;
+    }
 </style>
