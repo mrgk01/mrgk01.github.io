@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-<head>
     <title>Mr.GK</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav>
@@ -20,34 +22,43 @@
       <li><a href="index4.html">Contact</a></li>
     </ul>
   </nav>
-      <img src="logo.png" alt="logo"  id="music">
+  <div class="pic"></div>
+  <img src="logo.png" class="logo1">
       <center><embed src="https://www.youtube.com/embed/wPr1yXYl4Bc" id="vd"></embed></center>
       <br><br><br>
       <p id="para"><strike id="bio">Biography</strike><br><br>
         Hlo , Welcome to my site. Myself Gaurav(Mr.GK) , I'am a rapper and also a poet. I started rapping
         at the age of 17 in class 11th.There are 4 rap song of mine on youtube but because of some reason thy
         are private now. My 1st song was on pulwama attack (14 feb) and also I love to 
-        write poetries and i'am doing it from aproxx 1 year(2019).You can read my poetries on poetries page 
+        write poetries and i'am doing it from aproxx 1 year(2019). You can read my poetries on poetries page 
         also you can read it on my instagram page , i provided link on contact page of this website.</p>
-  
-  
-  <!-- <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram" id="insta"></i></a>
-  <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube" id="instaa"></i></a>
-  <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook"id="instaaa"></i></a>
-  <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google"id="instaaaa"></i></a> -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="jquery/jquery.js">
+
+        <div class="contact">
+            <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube  icon"></i></a>
+            <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook  icon"></i></a>
+            <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google  icon"></i></a>
+          </div>
+
+          <div class="contacts">
+            <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram icons"></i></a>
+            <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube  icons"></i></a>
+            <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook  icons"></i></a>
+            <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google  icons"></i></a>
+          </div>
+          
+        <link rel="stylesheet" href="jquery/jquery.js">
+
 </body>
 </html>
 <style>
+  html{
+   scroll-behavior: smooth;
+ }
     body{
         margin:0;
         padding: 0;
         font-family: sans-serif;
-        background-image: url(bg.jpg);
-        background-repeat: no-repeat;
-        background-position:top;
-        background-size: 100% auto;
         background-color:#000;
         color: #ffffff;
         
@@ -57,15 +68,18 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  }
 
 nav{
   background:black;
-  height: 50px;
+  height: 90px;
   width: 100%;
+  border: solid 2px white;
 }
 label.logo{
-  color: white;
+  color: white; 
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -124,7 +138,7 @@ a.active,a:hover{
     width: 100%;
     height: 100vh;
     background: #2c3e50;
-    top: 60px;
+    top: 90px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -146,6 +160,18 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
+  div.contact{
+       display: none;
+     }
+     .logo1{
+       display: none;
+     }
+     .pic{
+       display: none;
+     }
+     
+
+
 }
     #dp{
         position: relative;
@@ -160,7 +186,7 @@ a.active,a:hover{
         position: relative;
         padding: 5%;
         width: 90%;
-        margin: 5%;
+        margin: 5% 5% 10% 5%;
         line-height: 150%;
         font-size: 110%;
         color: white;
@@ -188,7 +214,7 @@ a.active,a:hover{
       margin: 0 auto;
       width: 80%;
       height: 500px;
-      margin-top: 20%;
+      margin-top: 10%;
     }
     @media (max-width:700px) {
      #vd{
@@ -199,7 +225,68 @@ a.active,a:hover{
      #vd{
        height: 200px;
      }
+    
    }
  
+ .contact{
+   position: fixed;
+   width: 100%;
+  background-color: white;
+  height: auto;
+  text-align: center;
+  z-index: 999;
+  bottom: 0rem;
+  
+ }
+ .contacts{
+   border-radius: 40px;
+  position: relative;
+   width: 80%;
+  background-color: white;
+  height: 4rem;
+  text-align: center;
+  z-index: 999;
+  margin:0 10% 15% 10%;
+  
+ }
 
+ .icon{
+   font-size: 3rem;
+   width: 4rem;
+   color:black;
+   margin: 1rem 4rem;
+
+ }
+ .icons{
+   font-size: 200%;
+   color:black;
+   margin: 1rem 1.3rem;
+
+ }
+
+ .icon :hover{
+   color: red;
+
+ }
+  .pic{
+   background-image: url(background.jpg);
+   background-size: cover;
+   width: 100%;
+   height:33rem;
+   filter:blur(4px);
+
+  }
+
+  .logo1{
+    position: absolute;
+    width: 45%;
+    top: 20%;
+    margin-left: 7%;
+    margin-top: 1%;
+  }
+  @media (min-width: 858px){
+    .contacts{
+      display: none;
+    }
+  }
 </style>

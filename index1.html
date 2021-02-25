@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
 
-    <title>Mr.GK</title>
+  <title>Mr.GK</title>
 </head>
+
 <body>
   <nav>
     <input type="checkbox" id="check">
@@ -20,137 +22,164 @@
       <li><a href="index4.html">Contact</a></li>
     </ul>
   </nav>
- <h1>Songs</h1>
- <div class="box">  
-   <a href="https://youtu.be/wPr1yXYl4Bc"><img src="Dooriyaan.png" alt="logo" class="pic"></a> 
-    <a href="https://youtu.be/wPr1yXYl4Bc" class="name">DOORIYAAN (Offical HD Video) - Mr GK | Rap Song | 2020<br><br>Dec 19, 2020</a>
-</div>
+  <h1>Songs</h1>
+  <div class="box">
+    <a href="https://youtu.be/wPr1yXYl4Bc"><img src="Dooriyaan.png" alt="logo" class="pic"></a>
+    <a href="https://youtu.be/wPr1yXYl4Bc" class="name">DOORIYAAN (Offical HD Video) - Mr GK | Rap Song |
+      2020<br><br>Dec 19, 2020</a>
+  </div>
 
-<div class="box">  
-  <a href="https://www.youtube.com/watch?v=UH1VgI9muHs"><img src="icon2.jpg" alt="logo" class="pic"></a>
-  <a href="https://www.youtube.com/watch?v=UH1VgI9muHs" class="name">Untold Story | ( Official HD Video) - Mr.GK | Rap Song | 2020<br><br> Nov 27, 2020</a>
-</div>
+  <div class="box">
+    <a href="https://www.youtube.com/watch?v=UH1VgI9muHs"><img src="icon2.jpg" alt="logo" class="pic"></a>
+    <a href="https://www.youtube.com/watch?v=UH1VgI9muHs" class="name">Untold Story | ( Official HD Video) - Mr.GK | Rap
+      Song | 2020<br><br> Nov 27, 2020</a>
+  </div>
 
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="jquery/jquery.js">
 </body>
+
 </html>
 <style>
-    body{
-        margin:0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color:#000;
-        color: #ffffff;
-        
-    }
-    *{
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #000;
+    color: #ffffff;
 
-}
+  }
 
-nav{
-  background:black;
-  height: 50px;
-  width: 100%;
-}
-label.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-a.active,a:hover{
-  color: red;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  
-  }
-  ul{
-    position: fixed;
+  *{
+ 
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+  nav {
+    background: black;
+    height: 90px;
     width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
+    border: solid 2px white;
+  }
 
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
   }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
   }
-  nav ul li a{
-    font-size: 20px;
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
   }
-  a:hover,a.active{
-    background: none;
-    color: #0082e6;
+
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
-  #check:checked ~ ul{
-    left: 0;
+
+  a.active,
+  a:hover {
+    color: red;
+    transition: .5s;
   }
-}
-    
-h1{
-    background-color:white;
+
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+
+    }
+
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 90px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+
+    }
+
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      
+    }
+
+    nav ul li a {
+      font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+      background: none;
+      color: #0082e6;
+    }
+
+    #check:checked~ul {
+      left: 0;
+    }
+  }
+
+  h1 {
+    background-color: white;
     text-align: center;
     font-size: 350%;
     padding: 2%;
     color: #000;
-}
+  }
 
-.pic{
+  .pic {
     width: 30%;
     margin: 2%;
-    height: 200px;
-}
-.name{
+    height: 250px;
+  }
+
+  .name {
 
     color: white;
     font-size: 150%;
@@ -158,25 +187,25 @@ h1{
     float: right;
 
 
-}
+  }
 
-.box{
+  .box {
     border: white 4px solid;
     width: 80%;
     margin: 10%;
-    
 
-}
-@media (max-width: 768px){
-  .pic{
-     width: 90%;
-     height: 40%;
-     margin: 5%;
+
   }
-  .box{
+
+  @media (max-width: 768px) {
+    .pic {
+      width: 90%;
+      height: 50%;
+      margin: 5%;
+    }
+
+    .box {
       height: 400px;
+    }
   }
-}
-
-
 </style>
