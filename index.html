@@ -7,6 +7,7 @@
     <title>Mr.GK</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
@@ -34,14 +35,14 @@
         also you can read it on my instagram page , i provided link on contact page of this website.</p>
 
         <div class="contact">
-            <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram icon"></i></a>
+            <a href="https://www.instagram.com/gaurav_mrgk/"><i class="fa fa-instagram icon"></i></a>
             <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube  icon"></i></a>
             <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook  icon"></i></a>
             <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google  icon"></i></a>
           </div>
 
           <div class="contacts">
-            <a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram icons"></i></a>
+            <a href="https://www.instagram.com/gaurav_mrgk/"><i class="fa fa-instagram icons"></i></a>
             <a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube  icons"></i></a>
             <a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook  icons"></i></a>
             <a href="mailto:khandurig84@gmail.com"><i class="fa fa-google  icons"></i></a>
@@ -51,242 +52,3 @@
 
 </body>
 </html>
-<style>
-  html{
-   scroll-behavior: smooth;
- }
-    body{
-        margin:0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color:#000;
-        color: #ffffff;
-        
-    }
-    *{
- 
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
-
-nav{
-  background:black;
-  height: 90px;
-  width: 100%;
-  border: solid 2px white;
-}
-label.logo{
-  color: white; 
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-}
-a.active,a:hover{
-  color: red;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 952px){
-  label.logo{
-    font-size: 35px;
-    padding-left: 30px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 90px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 1;
-
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-  div.contact{
-       display: none;
-     }
-     .logo1{
-       display: none;
-     }
-     .pic{
-       display: none;
-     }
-     
-
-
-}
-    #dp{
-        position: relative;
-        width: 35%;
-        margin-top: 30%;
-        margin-bottom: 10%;
-        left: 15%;
-        z-index: 1;
-    }
-
-    #para{
-        position: relative;
-        padding: 5%;
-        width: 90%;
-        margin: 5% 5% 10% 5%;
-        line-height: 150%;
-        font-size: 110%;
-        color: white;
-        border: 5px solid white;
-        text-align: center;
-       
-    }
-    
-    #bio{
-      font-size: 180%;
-      font-weight: bold;
-      font-style: oblique;
-      color: red;
-      
-    }
-    
-    #music{
-      width: 35%;
-      margin:0% 0 5% 0;
-      z-index: 1;
-    }
-
-    #vd{
-      position: relative;
-      margin: 0 auto;
-      width: 80%;
-      height: 500px;
-      margin-top: 10%;
-    }
-    @media (max-width:700px) {
-     #vd{
-       height: 350px;
-     }
-   }
-   @media (max-width:500px) {
-     #vd{
-       height: 200px;
-     }
-    
-   }
- 
- .contact{
-   position: fixed;
-   width: 100%;
-  background-color: white;
-  height: auto;
-  text-align: center;
-  z-index: 999;
-  bottom: 0rem;
-  
- }
- .contacts{
-   border-radius: 40px;
-  position: relative;
-   width: 80%;
-  background-color: white;
-  height: 4rem;
-  text-align: center;
-  z-index: 999;
-  margin:0 10% 15% 10%;
-  
- }
-
- .icon{
-   font-size: 3rem;
-   width: 4rem;
-   color:black;
-   margin: 1rem 4rem;
-
- }
- .icons{
-   font-size: 200%;
-   color:black;
-   margin: 1rem 1.3rem;
-
- }
-
- .icon :hover{
-   color: red;
-
- }
-  .pic{
-   background-image: url(background.jpg);
-   background-size: cover;
-   width: 100%;
-   height:33rem;
-   filter:blur(4px);
-
-  }
-
-  .logo1{
-    position: absolute;
-    width: 45%;
-    top: 20%;
-    margin-left: 7%;
-    margin-top: 1%;
-  }
-  @media (min-width: 858px){
-    .contacts{
-      display: none;
-    }
-  }
-</style>

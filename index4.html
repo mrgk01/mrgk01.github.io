@@ -1,151 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Mr.GK-Contact Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.GK</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div class="logo">Mr.GK</div>
-    <nav class="active">
-        <ul>
-             <li><a href="index.html">Home</a></li>
-            <li><a href="index2.html">Poetries</a></li>
-            <li><a href="index1.html">Songs</a></li>
-            <li><a href="index4.html"class="active">Contact Us</a></li>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">MrGK</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index1.html">Songs</a></li>
+      <li><a href="index2.html">Poetry</a></li>
+      <li><a href="index4.html"style="color: red;">Contact</a></li>
+    </ul>
+  </nav>
 
-        </ul>
-    </nav>
-</header>
+  <div class="boxes">
+      <h1 class="text-center">Contact</h1><br>
+      <a class="name">Facebook :</a><a href="https://www.facebook.com/gkrapper1" class="margin">gkrapper1</a><br><br>
+      <a class="name">Instagram :</a><a href="https://www.instagram.com/gaurav.mrgk/" class="margin">@gaurav.mrgk</a><br><br>
+      <a class="name">Youtube :</a><a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?" class="margin">youtube.com</a><br><br>
+      <a class="name">Email :</a><a href="mailto:khandurig84@gmail.com" class="margin">khandurig84@gmail.com</a><br><br>
+  </div>
+          
+        <link rel="stylesheet" href="jquery/jquery.js">
 
-<div class="contact">
-<h1>Contact Us</h1>
-
-<a href="https://www.instagram.com/mr.gk001/"><i class="fa fa-instagram" id="insta"></i></a>
-<a href="https://www.youtube.com/channel/UCFTv8j9ytbzl1pkucnQcVGA?"><i class="fa fa-youtube" id="instaa"></i></a>
-<a href="https://www.facebook.com/gkrapper1"><i class="fa fa-facebook"id="instaaa"></i></a>
-<a href="mailto:khandurig84@gmail.com"><i class="fa fa-google"id="instaaaa"></i></a>
-
-</div>
 </body>
-
-<style>
-     body{
-        background-color: rgb(15, 15, 15);
-        padding:0;
-        margin:0;
-        font-family: sans-serif;
-    }
-     header{
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0 100px;
-        width: 100%;
-        /* background: #262626; */
-        box-sizing: border-box;
-        
-    }
-    header .logo{
-        color:white;
-        font-size: 24px;
-        height: 70px;
-        line-height: 70px;
-        float: left;
-        font-weight: bold;
-        margin-left: -7%;
-    
-    }
-    header nav {
-        float: right;
-    }
-
-    header nav ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        margin-right:-70px ;
-        background-color: black;
-    }
-    header nav ul li
-    {
-        list-style: none;
-        
-       
-    }
-    header nav ul li a{
-        height: 70px;
-        line-height: 70px;
-        padding: 0 20px;
-        margin-right:0%;
-        color:white;
-        text-decoration: none;
-        display: block;
-    }
-    header nav ul li a:hover,
-    header nav ul li a.active{
-        color: #fff;
-        background: rgb(141, 23, 23);
-    }
-    h1{
-        color: white;
-        background-color: red;
-        font-size: 500%;
-        width: 100%;
-        text-align: center;
-
-    }
-    .contact{
-        border: 3px solid #fff;
-        margin-top: 10%;
-    }
-
-    #insta{
-        position: absolute;
-        font-size:70px;
-        color:white;
-        align-content: center;
-        padding: 3%;
-        padding-right:5%;
-        margin-left: 15%;
-
-    }
-   
-    #instaa{
-        position: absolute;
-        font-size:70px;
-        color:white;
-        align-content: center;
-        padding: 3%;
-        margin-left: 35%;
-        margin-right:10%;
-    }
-    #instaaa{
-        position: absolute;
-        font-size:70px;
-        color:white;
-        align-content: center;
-        padding: 3%;
-        margin-left: 55%;
-        padding-right:7%;
-    }
-    #instaaaa{
-        font-size:70px;
-        color:white;
-        align-content: center;
-        padding: 3%;
-        margin-left: 75%;
-        padding-right:7%;
-    }
-    #insta:hover,
-    #instaa:hover,
-    #instaaa:hover,
-    #instaaaa:hover{
-        color:red;
-        transition: 0.3s;
-        transform: scale(1.2);
-    }
-</style>
 </html>
+<style>
+  .margin{
+    margin: 0 2%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: blue;
+}
 
+.name{
+    margin: 0 2%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.name:hover{
+    color: white;
+}
+
+.boxes{
+    border: solid 2px #ffffff ;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+}
+
+
+</style>
