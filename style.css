@@ -235,4 +235,20 @@ a.active,a:hover{
     .contacts{
       display: none;
     }
+    nav{
+      position: fixed;
+      z-index: 999;
+    }
   }
+    
+    @media (min-width: 858px){
+    
+      nav{
+        position: fixed;
+        z-index: 999;
+        top: 0;
+      }
+      h1{
+        margin-top: 85px;
+      }
+    }
